@@ -1,0 +1,30 @@
+{
+    "description": "Example match configuration - copy to matches.json",
+    "default_order_size": 10,
+    "default_budget_per_market": 500,
+    "active_matches": [
+        {
+            "name": "Team A vs Team B",
+            "date": "2025-01-15",
+            "kick_off": "2025-01-15 19:30:00+00",
+            "kick_off_cet": "2025-01-15 20:30:00",
+            "channel_id": "YOUR_DISCORD_CHANNEL_ID",
+            "polymarket_url": "https://polymarket.com/event/your-event-slug",
+            "draw_token_id": "TOKEN_ID_FOR_DRAW",
+            "draw_order_size": 10,
+            "budget_per_market": 500,
+            "teams": {
+                "team_a": {
+                    "token_id": "TOKEN_ID_FOR_TEAM_A_WIN",
+                    "aliases": ["team_a", "teama", "a"],
+                    "order_size": 10
+                },
+                "team_b": {
+                    "token_id": "TOKEN_ID_FOR_TEAM_B_WIN",
+                    "aliases": ["team_b", "teamb", "b"],
+                    "order_size": 10
+                }
+            }
+        }
+    ]
+}
